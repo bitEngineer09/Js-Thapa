@@ -176,7 +176,7 @@ console.log(myNumber); // Output: 42
 // NaN (input can't be converted to an integer)
 
 //? What is the purpose of the NaN value in JavaScript❓
-//? NaN stands for "Not a Number" and is returned when a mathematical operation doesn't yield a valid number.
+// ! NaN stands for "Not a Number" and is returned when a mathematical operation doesn't yield a valid number.
 //? Also, to check whether a value is number or not we can use isNaN() function.
 
 console.log(isNaN("vinod"));
@@ -184,6 +184,9 @@ console.log(parseInt("xyz"));
 console.log(parseInt("@#$"));
 
 // //! NaN === NaN, Why is it false ❓
+// * Because NaN is not equal to anything — including itself.
+// * This is by design, according to the IEEE 754 standard for floating-point arithmetic (which JavaScript follows).
+
 if (NaN == NaN) {
     console.log("both are equal ");
 } else {
